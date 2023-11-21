@@ -1,5 +1,45 @@
+import React from 'react';
+
+// function Nav(props) {
+//   const {
+//     aboutSelected,
+//     setAboutSelected,
+//     portfolioSelected,
+//     setPortfolioSelected,
+//     resumeSelected,
+//     setResumeSelected,
+//     contactSelected,
+//     setContactSelected,
+//   } = props;
+
+//   function handleClick(e) {
+//     const name = e.target.getAttribute('name');
+//     if (name === 'about') {
+//       setAboutSelected(true);
+//       setPortfolioSelected(false);
+//       setResumeSelected(false);
+//       setContactSelected(false);
+//     } else if (name === 'portfolio') {
+//       setAboutSelected(false);
+//       setPortfolioSelected(true);
+//       setResumeSelected(false);
+//       setContactSelected(false);
+//     } else if (name === 'resume') {
+//       setAboutSelected(false);
+//       setPortfolioSelected(false);
+//       setResumeSelected(true);
+//       setContactSelected(false);
+//     } else {
+//       setAboutSelected(false);
+//       setPortfolioSelected(false);
+//       setResumeSelected(false);
+//       setContactSelected(true);
+//     }
+//   }
+// }
+
 export default function Nav() {
-    const linkStyle = { border: '1px black', padding: '5px' };
+    const linkStyle = {padding: '5px', color: 'white', textDecoration: 'none', hover: 'gray' };
   
     return (
       <nav className="main-header-menu">
@@ -7,9 +47,13 @@ export default function Nav() {
           style={{
             display: 'flex',
             fontFamily: 'helvetica',
-            flexDirection: 'row',
             alignItems: 'flex-start',
-            justifyContent: 'flex-start',
+            justifyContent: 'space-around',
+            backgroundColor: 'pewter',
+            width: '100%',
+            top: '0',
+            position: 'fixed',
+            borderBottom: 'solid 1px black',
           }}
         >
           <div style={linkStyle}>
