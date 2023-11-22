@@ -1,27 +1,3 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import Nav from './components/Nav';
-// import Portfolio from './components/Portfolio';
-// import Resume from './components/Resume';
-// import ContactForm from './components/Contact';
-// import Footer from './components/Footer';
-
-// function App() {
-//     return (
-//         <Router>
-//         <div>
-//             <Nav></Nav>
-//             <Switch>
-//             <Route exact path="/" component={About} />
-//             <Route exact path="/portfolio" component={Portfolio} />
-//             <Route exact path="/resume" component={Resume} />
-//             <Route exact path="/contact" component={ContactForm} />
-//             </Switch>
-//             <Footer></Footer>
-//         </div>
-//         </Router>
-//     );
-// }
 import profilepic from '../assets/IMG_0011.jpeg'; 
 
 function About() {

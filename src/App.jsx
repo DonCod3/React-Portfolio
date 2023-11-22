@@ -1,38 +1,25 @@
 import './App.css';
-import { useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
 import About from './components/About';
-// import Portfolio from './components/Portfolio';
-// import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 import ContactForm from './components/ContactForm';
 import Footer from './components/footer';
 
 function App () {
-  const [aboutSelected, setAboutSelected] = useState(true);
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false);
-  const [contactSelected, setContactSelected] = useState(false);
-
   return (
-    
     <div>
-      <Nav
-        aboutSelected={aboutSelected}
-        setAboutSelected={setAboutSelected}
-        portfolioSelected={portfolioSelected}
-        setPortfolioSelected={setPortfolioSelected}
-        resumeSelected={resumeSelected}
-        setResumeSelected={setResumeSelected}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      {
-        aboutSelected ? (<About />)
-        // : portfolioSelected ? (<Portfolio />)
-        // : resumeSelected ? (<Resume />)
-        : contactSelected ? (<ContactForm />)
-        : (<About />)
-      }
+      <Nav></Nav>
+
+      <Switch>
+        <Route exact path="/" component={About} />
+        <Route path="/about" component={About} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/contact" component={ContactForm} />
+      </Switch>
+
       <Footer></Footer>
     </div>
   );
