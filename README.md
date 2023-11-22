@@ -1,6 +1,4 @@
-# 20 React: React Portfolio
-
-# Professional README Generator
+# React: React Portfolio
 
   ## Description
   This single page React application portfolio was created to showcase my work as a web developer. It contains a brief bio, a link to my resume, and a contact form. The portfolio is responsive and can be viewed on any device.
