@@ -5,12 +5,12 @@ export default function Nav() {
     const linkStyle = {padding: '5px', color: 'white', textDecoration: 'none', hover: 'gray' };
   
     return (
-      <nav className="main-header-menu">
+      <nav className="main-header-menu" style={linkStyle}>
         <section
           style={{
             display: 'flex',
             fontFamily: 'helvetica',
-            alignItems: 'flex-start',
+            alignItems: 'flex-stcoart',
             justifyContent: 'space-around',
             width: '100%',
             top: '0',
